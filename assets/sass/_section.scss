@@ -24,12 +24,13 @@
         font-weight : 600;
         font-size   : 44px;
         font-family : "Open Sans Condensed", sans-serif;
-        margin      : 0 0 20px 0;
+        margin      : 0 0 30px 0;
     }
 
     .caption
     {
         position : relative;
+        margin   : 0 0 10px 0;
 
         img
         {
@@ -57,16 +58,46 @@
                 margin      : -17px 0 0 -17px;
             }
         }
+    }
+    .special-link
+    {
+        font-family   : "Open Sans", sans-serif;
+        font-weight   : 600;
+        color         : #896d9f;
+        background    : #fafafa;
+        display       : block;
+        text-align    : center;
+        margin        : 6px 0 0 0;
+        padding       : 6px 5px 6px 5px;
+        transition    : background-color 150ms;
+        font-size     : 14px;
+        border-radius : 5px;
 
+        &:hover
+        {
+            background : #f0f0f0;
+        }
+
+        & i
+        {
+            font-size : 17px;
+            margin    : 0 5px 0 0;
+        }
+    }
+
+    .columns
+    {
+        position : relative;
+        width    : 100%;
+        float    : left;
+        clear    : both;
     }
 
     .block
     {
-        background    : linear-gradient(to bottom, #fdfdfd 0%, #ececec 100%);
+        background    : #fafafa;
         box-sizing    : border-box;
         border-radius : 5px;
-        border        : 1px solid #e2e2e2;
-        box-shadow    : inset 0 1px 0 #ffffff;
         padding       : 10px 15px 15px 15px;
     }
 
@@ -88,6 +119,26 @@
             margin-right : 2%;
         }
 
+        &.left.image img
+        {
+            left : 25%;
+        }
+
+        &.image
+        {
+            height : 100%;
+            height : 240px;
+
+            img
+            {
+                position      : absolute;
+                top           : 50%;
+                left          : 75%;
+                margin        : -130px 0 0 -120px;
+                border-radius : 50%;
+            }
+        }
+
         @media screen and (max-width : 600px) {
             width : 100%;
 
@@ -97,12 +148,6 @@
             }
         }
 
-    }
-
-    .clear
-    {
-        width : 100%;
-        clear : both;
     }
 
     h4
@@ -168,6 +213,12 @@
             color     : #515151;
             font-size : 12px;
             margin    : 0 4px 0 4px;
+        }
+
+        a
+        {
+            color       : #896d9f;
+            font-weight : 600;
         }
 
         strong
