@@ -117,26 +117,44 @@ a:visited {
   margin: 18px 0 0 65px;
   line-height: 22px;
 }
-/* line 32, ../sass/_menu.scss */
+/* line 31, ../sass/_menu.scss */
+.menu h1 a {
+  font-size: 11px;
+  float: right;
+  margin: 7px 0 0 10px;
+  color: #000000;
+  background: #222222;
+  display: inline-block;
+  line-height: 8px;
+  padding: 4px 5px 4px 3px;
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  transition: background-color 150ms;
+}
+/* line 45, ../sass/_menu.scss */
+.menu h1 a:hover {
+  background: #ffffff;
+}
+/* line 52, ../sass/_menu.scss */
 .menu .links {
   float: right;
   line-height: 22px;
   margin: 19px 10px 0 0;
 }
-/* line 39, ../sass/_menu.scss */
-.menu a {
+/* line 58, ../sass/_menu.scss */
+.menu .links a {
   position: relative;
   color: #cccccc;
   margin: 0 10px 0 0;
   transition: color 300ms;
   text-align: right;
 }
-/* line 47, ../sass/_menu.scss */
-.menu a:hover {
+/* line 66, ../sass/_menu.scss */
+.menu .links a:hover {
   color: #ffffff;
 }
-/* line 52, ../sass/_menu.scss */
-.menu a:after {
+/* line 71, ../sass/_menu.scss */
+.menu .links a:after {
   display: block;
   opacity: 0;
   content: ' ';
@@ -148,14 +166,14 @@ a:visited {
   position: absolute;
   left: 0;
 }
-/* line 66, ../sass/_menu.scss */
-.menu a:hover:after {
+/* line 85, ../sass/_menu.scss */
+.menu .links a:hover:after {
   opacity: 0.3;
   margin-top: 7px;
 }
 @media screen and (max-width: 700px) {
-  /* line 39, ../sass/_menu.scss */
-  .menu a {
+  /* line 58, ../sass/_menu.scss */
+  .menu .links a {
     float: right;
     clear: both;
     margin: 0 10px 10px 0;
