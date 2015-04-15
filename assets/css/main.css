@@ -1,7 +1,297 @@
 /* line 1, ../sass/_reset.scss */
-html, body, div, span, p, form, input, textarea, select, h1, h2, h3, table, tbody, tr, td, label, button, ul, li {
+html, body, div, span, p, form, input, textarea, select, h1, h2, h3, table, tbody, tr, td, label, button, ul, li, video {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 11, ../sass/_reset.scss */
+a,
+a:visited {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_header.scss */
+.header {
+  float: left;
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+  background: #222222;
+  padding: 180px 0 85px 0;
+  overflow: hidden;
+}
+/* line 11, ../sass/_header.scss */
+.header:after {
+  top: 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.6;
+}
+/* line 24, ../sass/_header.scss */
+.header video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: url(images/background.jpg) no-repeat center center;
+  background-size: cover;
+}
+/* line 34, ../sass/_header.scss */
+.header h2 {
+  position: relative;
+  z-index: 4;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 56px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans", sans-serif;
+  margin: 0 20px 80px 20px;
+}
+/* line 46, ../sass/_header.scss */
+.header h2 strong {
+  font-weight: 600;
+}
+/* line 52, ../sass/_header.scss */
+.header a {
+  position: relative;
+  z-index: 4;
+  left: 50%;
+  margin: 0 0 0 -105px;
+  display: block;
+  width: 210px;
+  height: 60px;
+  background: #000000 url(images/mas.png) no-repeat;
+  overflow: hidden;
+  text-indent: -500px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  transition: box-shadow 300ms;
+}
+/* line 68, ../sass/_header.scss */
+.header a:hover {
+  box-shadow: 0 0 18px #ffffff;
+}
+
+/* line 1, ../sass/_menu.scss */
+.menu {
+  float: left;
+  width: 100%;
+  background: #000000 url(images/icon.png) no-repeat 18px 10px;
+  font-weight: 300;
+  font-size: 28px;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 0 0 20px 0;
+}
+@media screen and (max-width: 700px) {
+  /* line 1, ../sass/_menu.scss */
+  .menu {
+    padding: 0 0 8px 0;
+  }
+}
+/* line 15, ../sass/_menu.scss */
+.menu h1 {
+  position: absolute;
+  font-size: 28px;
+  color: #ffffff;
+  margin: 18px 0 0 65px;
+  line-height: 22px;
+}
+/* line 24, ../sass/_menu.scss */
+.menu .links {
+  float: right;
+  line-height: 22px;
+  margin: 19px 10px 0 0;
+}
+/* line 31, ../sass/_menu.scss */
+.menu a {
+  position: relative;
+  color: #cccccc;
+  margin: 0 10px 0 0;
+  transition: color 300ms;
+  text-align: right;
+}
+/* line 39, ../sass/_menu.scss */
+.menu a:hover {
+  color: #ffffff;
+}
+/* line 44, ../sass/_menu.scss */
+.menu a:after {
+  display: block;
+  opacity: 0;
+  content: ' ';
+  width: 100%;
+  height: 1px;
+  margin-top: 18px;
+  background: #ffffff;
+  transition: margin-top 150ms, opacity 150ms;
+  position: absolute;
+  left: 0;
+}
+/* line 58, ../sass/_menu.scss */
+.menu a:hover:after {
+  opacity: 0.3;
+  margin-top: 7px;
+}
+@media screen and (max-width: 700px) {
+  /* line 31, ../sass/_menu.scss */
+  .menu a {
+    float: right;
+    clear: both;
+    margin: 0 10px 10px 0;
+  }
+}
+
+/* line 1, ../sass/_section.scss */
+.section {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 862px;
+  left: 50%;
+  margin: 0 0 0 -431px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 20px 0 0 0;
+}
+@media screen and (max-width: 880px) {
+  /* line 1, ../sass/_section.scss */
+  .section {
+    width: 90%;
+    margin: 0 0 0 5%;
+    left: 0;
+  }
+}
+/* line 19, ../sass/_section.scss */
+.section h3 {
+  color: #896d9f;
+  text-align: center;
+  font-weight: 600;
+  font-size: 44px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 0 20px 0;
+}
+/* line 29, ../sass/_section.scss */
+.section .caption {
+  position: relative;
+}
+/* line 33, ../sass/_section.scss */
+.section .caption img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+/* line 40, ../sass/_section.scss */
+.section .caption .overlay {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  background: rgba(137, 109, 159, 0.5);
+}
+/* line 47, ../sass/_section.scss */
+.section .caption .overlay:after {
+  content: '\f06e';
+  font-size: 34px;
+  position: absolute;
+  color: #ffffff;
+  font-family: "FontAwesome", sans-serif;
+  top: 50%;
+  left: 50%;
+  margin: -17px 0 0 -17px;
+}
+/* line 62, ../sass/_section.scss */
+.section .full {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px 0;
+  background: #f7f7f7;
+  padding: 10px 15px 15px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* line 73, ../sass/_section.scss */
+.section .half {
+  width: 49%;
+  float: left;
+  margin: 0 0 20px 0;
+  background: #f7f7f7;
+  padding: 10px 15px 15px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* line 83, ../sass/_section.scss */
+.section .half.left {
+  margin-right: 2%;
+}
+@media screen and (max-width: 600px) {
+  /* line 73, ../sass/_section.scss */
+  .section .half {
+    width: 100%;
+  }
+  /* line 91, ../sass/_section.scss */
+  .section .half.left {
+    margin-right: 0;
+  }
+}
+/* line 99, ../sass/_section.scss */
+.section .clear {
+  width: 100%;
+  clear: both;
+}
+/* line 105, ../sass/_section.scss */
+.section h4 {
+  color: #896d9f;
+  font-weight: 600;
+  font-size: 23px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 0 6px 0;
+}
+/* line 113, ../sass/_section.scss */
+.section h4 i {
+  font-size: 21px;
+  float: right;
+  margin: 5px 0 0 0;
+  color: #cccccc;
+  cursor: pointer;
+  transition: color 150ms;
+}
+/* line 122, ../sass/_section.scss */
+.section h4 i:hover {
+  color: #333333;
+}
+/* line 129, ../sass/_section.scss */
+.section p {
+  color: #333333;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+/* line 137, ../sass/_section.scss */
+.section p i {
+  color: #515151;
+  font-size: 12px;
+  margin: 0 4px 0 4px;
+}
+/* line 144, ../sass/_section.scss */
+.section p strong {
+  color: #896d9f;
+  font-weight: 600;
+  display: inline-block;
+  width: 170px;
+}
+/* line 153, ../sass/_section.scss */
+.section hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #ffffff;
 }

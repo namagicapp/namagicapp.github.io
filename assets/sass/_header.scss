@@ -1,0 +1,74 @@
+.header
+{
+    float      : left;
+    position   : relative;
+    color      : #ffffff;
+    width      : 100%;
+    background : #222222;
+    padding    : 180px 0 85px 0;
+    overflow   : hidden;
+
+    &:after
+    {
+        top        : 0;
+        content    : ' ';
+        display    : block;
+        position   : absolute;
+        z-index    : 3;
+        width      : 100%;
+        height     : 100%;
+        background : #000000;
+        opacity    : 0.6;
+    }
+
+    video
+    {
+        position        : absolute;
+        top             : 0;
+        width           : 100%;
+        z-index         : 2;
+        background      : url(images/background.jpg) no-repeat center center;
+        background-size : cover;
+    }
+
+    h2
+    {
+        position    : relative;
+        z-index     : 4;
+        font-weight : 300;
+        font-size   : 44px;
+        line-height : 56px;
+        text-align  : center;
+        text-shadow : 0 1px 0 rgba(0, 0, 0, 0.5);
+        font-family : "Open Sans", sans-serif;
+        margin      : 0 20px 80px 20px;
+
+        strong
+        {
+            font-weight : 600;
+        }
+    }
+
+    a
+    {
+        position      : relative;
+        z-index       : 4;
+        left          : 50%;
+        margin        : 0 0 0 -105px;
+        display       : block;
+        width         : 210px;
+        height        : 60px;
+        background    : #000000 url(images/mas.png) no-repeat;
+        overflow      : hidden;
+        text-indent   : -500px;
+        border-radius : 6px;
+        box-shadow    : 0 0 12px rgba(0, 0, 0, 0.7);
+        transition    : box-shadow 300ms;
+
+        &:hover
+        {
+            box-shadow : 0 0 18px #ffffff;
+        }
+    }
+
+}
