@@ -22,8 +22,9 @@ a:visited {
   background: #222222;
   padding: 180px 0 85px 0;
   overflow: hidden;
+  margin: 0 0 61px 0;
 }
-/* line 11, ../sass/_header.scss */
+/* line 12, ../sass/_header.scss */
 .header:after {
   top: 0;
   content: ' ';
@@ -35,7 +36,7 @@ a:visited {
   background: #000000;
   opacity: 0.6;
 }
-/* line 24, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 .header video {
   position: absolute;
   top: 0;
@@ -44,7 +45,7 @@ a:visited {
   background: url(images/background.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 34, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 .header h2 {
   position: relative;
   z-index: 4;
@@ -56,11 +57,11 @@ a:visited {
   font-family: "Open Sans", sans-serif;
   margin: 0 20px 80px 20px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 .header h2 strong {
   font-weight: 600;
 }
-/* line 52, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 .header a {
   position: relative;
   z-index: 4;
@@ -76,14 +77,15 @@ a:visited {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
   transition: box-shadow 300ms;
 }
-/* line 68, ../sass/_header.scss */
+/* line 69, ../sass/_header.scss */
 .header a:hover {
   box-shadow: 0 0 18px #ffffff;
 }
 
 /* line 1, ../sass/_menu.scss */
 .menu {
-  float: left;
+  position: absolute;
+  top: 461px;
   width: 100%;
   background: #000000 url(images/icon.png) no-repeat 18px 10px;
   font-weight: 300;
@@ -91,13 +93,19 @@ a:visited {
   font-family: "Open Sans Condensed", sans-serif;
   padding: 0 0 20px 0;
 }
+/* line 12, ../sass/_menu.scss */
+.menu.js-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
 @media screen and (max-width: 700px) {
   /* line 1, ../sass/_menu.scss */
   .menu {
     padding: 0 0 8px 0;
   }
 }
-/* line 15, ../sass/_menu.scss */
+/* line 23, ../sass/_menu.scss */
 .menu h1 {
   position: absolute;
   font-size: 28px;
@@ -105,13 +113,13 @@ a:visited {
   margin: 18px 0 0 65px;
   line-height: 22px;
 }
-/* line 24, ../sass/_menu.scss */
+/* line 32, ../sass/_menu.scss */
 .menu .links {
   float: right;
   line-height: 22px;
   margin: 19px 10px 0 0;
 }
-/* line 31, ../sass/_menu.scss */
+/* line 39, ../sass/_menu.scss */
 .menu a {
   position: relative;
   color: #cccccc;
@@ -119,11 +127,11 @@ a:visited {
   transition: color 300ms;
   text-align: right;
 }
-/* line 39, ../sass/_menu.scss */
+/* line 47, ../sass/_menu.scss */
 .menu a:hover {
   color: #ffffff;
 }
-/* line 44, ../sass/_menu.scss */
+/* line 52, ../sass/_menu.scss */
 .menu a:after {
   display: block;
   opacity: 0;
@@ -136,13 +144,13 @@ a:visited {
   position: absolute;
   left: 0;
 }
-/* line 58, ../sass/_menu.scss */
+/* line 66, ../sass/_menu.scss */
 .menu a:hover:after {
   opacity: 0.3;
   margin-top: 7px;
 }
 @media screen and (max-width: 700px) {
-  /* line 31, ../sass/_menu.scss */
+  /* line 39, ../sass/_menu.scss */
   .menu a {
     float: right;
     clear: both;

@@ -1,12 +1,20 @@
 .menu
 {
-    float       : left;
+    position    : absolute;
+    top         : 461px;
     width       : 100%;
     background  : #000000 url(images/icon.png) no-repeat 18px 10px;
     font-weight : 300;
     font-size   : 28px;
     font-family : "Open Sans Condensed", sans-serif;
     padding     : 0 0 20px 0;
+
+    &.js-fixed
+    {
+        position : fixed;
+        top      : 0;
+        z-index  : 100;
+    }
 
     @media screen and (max-width : 700px) {
         padding : 0 0 8px 0;
