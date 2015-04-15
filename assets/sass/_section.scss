@@ -137,6 +137,32 @@
         font-family : "Open Sans", sans-serif;
         text-align  : justify;
 
+        &.emphasis
+        {
+            font-size   : 20px;
+            line-height : 32px;
+            margin      : 0 0 10px 0;
+
+            &:before
+            {
+                font-size   : 24px;
+                color       : #cccccc;
+                font-family : "FontAwesome", sans-serif;
+                content     : '\f10d';
+                display     : block;
+            }
+
+            &:after
+            {
+                font-size   : 24px;
+                color       : #cccccc;
+                font-family : "FontAwesome", sans-serif;
+                content     : '\f10e';
+                display     : block;
+                text-align  : right;
+            }
+        }
+
         i
         {
             color     : #515151;
