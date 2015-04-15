@@ -1,3 +1,8 @@
+.js-fixed-menu .header
+{
+    margin     : 0 0 61px 0;
+}
+
 .header
 {
     float      : left;
@@ -7,7 +12,6 @@
     background : #222222;
     padding    : 180px 0 85px 0;
     overflow   : hidden;
-    margin     : 0 0 61px 0;
 
     &:after
     {

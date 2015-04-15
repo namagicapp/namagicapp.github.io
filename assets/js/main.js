@@ -6,6 +6,7 @@
     var module = {};
     var $menu;
     var $window;
+    var $body;
     var menuTop = 0;
 
     /**
@@ -16,6 +17,7 @@
         $menu = $('.js-menu');
         menuTop = $menu.offset().top;
         $window = $(window);
+        $body = $('body');
         $window.on('scroll', _onWindowScroll).trigger('scroll');
         $('.js-caption-magnifier').on('mouseover mouseout', _onCaptionMagnifier);
         $('.js-scrollable').on('click', _onSmoothScroll);
@@ -50,14 +52,14 @@
     var _onWindowScroll = function()
     {
         var window_top = $window.scrollTop();
-        var is_fixed = $menu.hasClass('js-fixed');
+        var is_fixed = $body.hasClass('js-fixed-menu');
         if (is_fixed && window_top <= menuTop)
         {
-            $menu.removeClass('js-fixed');
+            $body.removeClass('js-fixed-menu');
         }
         if (!is_fixed && window_top > menuTop)
         {
-            $menu.addClass('js-fixed');
+            $body.addClass('js-fixed-menu');
         }
     };
 
