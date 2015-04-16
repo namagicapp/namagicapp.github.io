@@ -42,7 +42,7 @@
     var _onSmoothScroll = function(evt)
     {
         evt.preventDefault();
-        var top = $($(evt.currentTarget).attr('href')).offset().top - $menu.height();
+        var top = $($(evt.currentTarget).attr('href')).offset().top - ($menu.height() * 2);
         $('html, body').animate({scrollTop: top}, 300);
     };
 
