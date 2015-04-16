@@ -1,4 +1,4 @@
-html, body, div, span, p, form, input, textarea, select, h1, h2, h3, table, tbody, tr, td, label, button, ul, li, video
+html, body, div, span, p, form, input, textarea, select, h1, h2, h3, h4, h5, table, tbody, tr, td, label, button, ul, li, video
 {
     margin                 : 0;
     padding                : 0;
@@ -6,6 +6,11 @@ html, body, div, span, p, form, input, textarea, select, h1, h2, h3, table, tbod
     outline                : 0;
 
     -webkit-font-smoothing : antialiased;
+}
+
+html
+{
+    overflow-x : hidden;
 }
 
 a,
