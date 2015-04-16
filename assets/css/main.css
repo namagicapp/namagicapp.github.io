@@ -201,7 +201,15 @@ a:visited {
   font-size: 20px;
   line-height: 32px;
 }
-/* line 17, ../sass/_section.scss */
+@media screen and (max-width: 880px) {
+  /* line 2, ../sass/_section.scss */
+  .emphasis {
+    width: 90%;
+    margin: 35px 0 0 5%;
+    left: 0;
+  }
+}
+/* line 23, ../sass/_section.scss */
 .emphasis:before {
   font-size: 24px;
   color: #cccccc;
@@ -209,7 +217,7 @@ a:visited {
   content: '\f10d';
   display: block;
 }
-/* line 26, ../sass/_section.scss */
+/* line 32, ../sass/_section.scss */
 .emphasis:after {
   font-size: 24px;
   color: #cccccc;
@@ -219,7 +227,7 @@ a:visited {
   text-align: right;
 }
 
-/* line 37, ../sass/_section.scss */
+/* line 43, ../sass/_section.scss */
 h3 {
   position: relative;
   float: left;
@@ -233,7 +241,7 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
-/* line 51, ../sass/_section.scss */
+/* line 57, ../sass/_section.scss */
 .section {
   position: relative;
   width: 100%;
@@ -241,7 +249,7 @@ h3 {
   background: linear-gradient(to bottom, #fafafa, #f3f3f3);
   overflow-y: hidden;
 }
-/* line 59, ../sass/_section.scss */
+/* line 65, ../sass/_section.scss */
 .section .centered {
   position: relative;
   float: left;
@@ -251,25 +259,34 @@ h3 {
   margin: 0 0 0 -431px;
   box-sizing: border-box;
 }
-/* line 70, ../sass/_section.scss */
+@media screen and (max-width: 880px) {
+  /* line 65, ../sass/_section.scss */
+  .section .centered {
+    width: 90%;
+    margin: 0 0 0 5%;
+    left: 0;
+    padding: 30px 0 0 0;
+  }
+}
+/* line 83, ../sass/_section.scss */
 .section .col3 {
   float: left;
   width: 33.33%;
   box-sizing: border-box;
   text-align: center;
 }
-/* line 77, ../sass/_section.scss */
+/* line 90, ../sass/_section.scss */
 .section .col3 a {
   color: #896d9f;
   font-weight: 600;
   font-size: 26px;
   font-family: "Open Sans Condensed", sans-serif;
 }
-/* line 84, ../sass/_section.scss */
+/* line 97, ../sass/_section.scss */
 .section .col3 a:hover span {
   background: #cccccc;
 }
-/* line 89, ../sass/_section.scss */
+/* line 102, ../sass/_section.scss */
 .section .col3 a span {
   position: relative;
   display: block;
@@ -281,13 +298,19 @@ h3 {
   border-radius: 50%;
   transition: background-color 300ms;
 }
-/* line 102, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 102, ../sass/_section.scss */
+  .section .col3 a span {
+    margin-top: 0;
+  }
+}
+/* line 119, ../sass/_section.scss */
 .section .col3 a i {
   color: #ffffff;
   font-size: 80px;
   margin: 34px 0 0 0;
 }
-/* line 111, ../sass/_section.scss */
+/* line 128, ../sass/_section.scss */
 .section .col2 {
   position: relative;
   width: 49.5%;
@@ -296,37 +319,73 @@ h3 {
   vertical-align: top;
   margin: -10px 0 0 0;
 }
-/* line 120, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 128, ../sass/_section.scss */
+  .section .col2 {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  /* line 141, ../sass/_section.scss */
+  .section .col2 img {
+    width: 100%;
+  }
+}
+/* line 147, ../sass/_section.scss */
 .section .col2.valign {
   vertical-align: middle;
 }
-/* line 125, ../sass/_section.scss */
+/* line 152, ../sass/_section.scss */
 .section .col2.text {
   padding: 45px 30px 45px 30px;
   background: #ff99ff;
 }
-/* line 131, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 152, ../sass/_section.scss */
+  .section .col2.text {
+    width: 100%;
+    padding: 0 30px 0 30px;
+  }
+}
+/* line 163, ../sass/_section.scss */
 .section .col2.left {
   left: 0;
 }
-/* line 135, ../sass/_section.scss */
+/* line 167, ../sass/_section.scss */
 .section .col2.left img {
-  margin-left: -431px;
+  float: right;
 }
-/* line 141, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 167, ../sass/_section.scss */
+  .section .col2.left img {
+    float: none;
+  }
+}
+/* line 176, ../sass/_section.scss */
 .section .col2.right {
   right: 0;
 }
-/* line 146, ../sass/_section.scss */
+/* line 181, ../sass/_section.scss */
 .section .col2.image {
   margin: 0;
   max-height: 400px;
 }
-/* line 151, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 181, ../sass/_section.scss */
+  .section .col2.image {
+    max-height: none;
+  }
+}
+/* line 190, ../sass/_section.scss */
 .section .col2.image .bottom {
   margin-top: -188px;
 }
-/* line 158, ../sass/_section.scss */
+@media screen and (max-width: 600px) {
+  /* line 190, ../sass/_section.scss */
+  .section .col2.image .bottom {
+    margin: 0;
+  }
+}
+/* line 201, ../sass/_section.scss */
 .section h4 {
   color: #333333;
   font-weight: 600;
@@ -334,14 +393,14 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 0 15px 0;
 }
-/* line 166, ../sass/_section.scss */
+/* line 209, ../sass/_section.scss */
 .section h4 i {
   color: #896d9f;
   display: block;
   margin: 0 0 15px 0;
   font-size: 28px;
 }
-/* line 175, ../sass/_section.scss */
+/* line 218, ../sass/_section.scss */
 .section p {
   color: #333333;
   font-size: 15px;
@@ -349,7 +408,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
   text-align: justify;
 }
-/* line 183, ../sass/_section.scss */
+/* line 226, ../sass/_section.scss */
 .section p i {
   color: #515151;
   font-size: 12px;
