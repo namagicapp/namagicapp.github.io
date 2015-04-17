@@ -16,8 +16,8 @@ $special-color : #896d9f;
     line-height : 32px;
 
     @media screen and (max-width : 880px) {
-        width  : 90%;
-        margin : 35px 0 0 5%;
+        width  : 80%;
+        margin : 35px 0 0 10%;
         left   : 0;
     }
 
@@ -94,27 +94,29 @@ h3
 
         a
         {
+            display     : block;
             color       : $special-color;
             font-weight : 600;
             font-size   : 26px;
             font-family : "Open Sans Condensed", sans-serif;
+            margin      : 0 0 20px 0;
 
             &:hover span
             {
-                background : #cccccc;
+                background : #dadada;
             }
 
             span
             {
-                position                   : relative;
-                display                    : block;
-                width                      : 150px;
-                height                     : 150px;
-                left                       : 50%;
-                margin                     : 30px 0 15px -75px;
-                background                 : #e4e4e4;
-                border-radius              : 50%;
-                transition                 : background-color 300ms;
+                position      : relative;
+                display       : block;
+                width         : 150px;
+                height        : 150px;
+                left          : 50%;
+                margin        : 30px 0 15px -75px;
+                background    : #e7e7e7;
+                border-radius : 50%;
+                transition    : background-color 300ms;
 
                 @media screen and (max-width : 600px) {
                     margin-top : 0;
@@ -167,7 +169,7 @@ h3
 
             &.short
             {
-                padding : 30px;
+                padding : 10px 30px 10px 30px;
             }
 
             @media screen and (max-width : 600px) {

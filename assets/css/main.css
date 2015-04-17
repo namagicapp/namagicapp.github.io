@@ -205,8 +205,8 @@ a:visited {
 @media screen and (max-width: 880px) {
   /* line 3, ../sass/_section.scss */
   .emphasis {
-    width: 90%;
-    margin: 35px 0 0 5%;
+    width: 80%;
+    margin: 35px 0 0 10%;
     left: 0;
   }
 }
@@ -284,16 +284,18 @@ h3 {
 }
 /* line 95, ../sass/_section.scss */
 .section .col3 a {
+  display: block;
   color: #896d9f;
   font-weight: 600;
   font-size: 26px;
   font-family: "Open Sans Condensed", sans-serif;
+  margin: 0 0 20px 0;
 }
-/* line 102, ../sass/_section.scss */
+/* line 104, ../sass/_section.scss */
 .section .col3 a:hover span {
-  background: #cccccc;
+  background: #dadada;
 }
-/* line 107, ../sass/_section.scss */
+/* line 109, ../sass/_section.scss */
 .section .col3 a span {
   position: relative;
   display: block;
@@ -301,29 +303,29 @@ h3 {
   height: 150px;
   left: 50%;
   margin: 30px 0 15px -75px;
-  background: #e4e4e4;
+  background: #e7e7e7;
   border-radius: 50%;
   transition: background-color 300ms;
 }
 @media screen and (max-width: 600px) {
-  /* line 107, ../sass/_section.scss */
+  /* line 109, ../sass/_section.scss */
   .section .col3 a span {
     margin-top: 0;
   }
 }
-/* line 124, ../sass/_section.scss */
+/* line 126, ../sass/_section.scss */
 .section .col3 a:hover i {
   font-size: 80px;
   margin-top: 34px;
 }
-/* line 130, ../sass/_section.scss */
+/* line 132, ../sass/_section.scss */
 .section .col3 a i {
   color: #ffffff;
   font-size: 60px;
   margin-top: 45px;
   transition: font-size 150ms, margin-top 150ms;
 }
-/* line 140, ../sass/_section.scss */
+/* line 142, ../sass/_section.scss */
 .section .col2 {
   position: relative;
   width: 49.5%;
@@ -333,69 +335,69 @@ h3 {
   margin: -10px 0 0 0;
 }
 @media screen and (max-width: 600px) {
-  /* line 140, ../sass/_section.scss */
+  /* line 142, ../sass/_section.scss */
   .section .col2 {
     width: 100%;
     margin: 0 0 30px 0;
   }
-  /* line 153, ../sass/_section.scss */
+  /* line 155, ../sass/_section.scss */
   .section .col2 img {
     width: 100%;
   }
 }
-/* line 159, ../sass/_section.scss */
+/* line 161, ../sass/_section.scss */
 .section .col2.valign {
   vertical-align: middle;
 }
-/* line 164, ../sass/_section.scss */
+/* line 166, ../sass/_section.scss */
 .section .col2.text {
   padding: 80px 30px 80px 30px;
 }
-/* line 168, ../sass/_section.scss */
+/* line 170, ../sass/_section.scss */
 .section .col2.text.short {
-  padding: 30px;
+  padding: 10px 30px 10px 30px;
 }
 @media screen and (max-width: 600px) {
-  /* line 164, ../sass/_section.scss */
+  /* line 166, ../sass/_section.scss */
   .section .col2.text {
     width: 100%;
     padding: 0 30px 0 30px;
   }
 }
-/* line 179, ../sass/_section.scss */
+/* line 181, ../sass/_section.scss */
 .section .col2.left {
   left: 0;
 }
-/* line 183, ../sass/_section.scss */
+/* line 185, ../sass/_section.scss */
 .section .col2.left img {
   float: right;
 }
 @media screen and (max-width: 600px) {
-  /* line 183, ../sass/_section.scss */
+  /* line 185, ../sass/_section.scss */
   .section .col2.left img {
     float: none;
   }
 }
-/* line 192, ../sass/_section.scss */
+/* line 194, ../sass/_section.scss */
 .section .col2.right {
   right: 0;
 }
-/* line 197, ../sass/_section.scss */
+/* line 199, ../sass/_section.scss */
 .section .col2.image {
   margin: 0;
   max-height: 400px;
 }
 @media screen and (max-width: 600px) {
-  /* line 197, ../sass/_section.scss */
+  /* line 199, ../sass/_section.scss */
   .section .col2.image {
     max-height: none;
   }
 }
-/* line 206, ../sass/_section.scss */
+/* line 208, ../sass/_section.scss */
 .section .col2.image .bottom {
   margin-top: -150px;
 }
-/* line 213, ../sass/_section.scss */
+/* line 215, ../sass/_section.scss */
 .section .col2 h4 {
   color: #333333;
   font-weight: 600;
@@ -403,14 +405,14 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 0 20px 0;
 }
-/* line 221, ../sass/_section.scss */
+/* line 223, ../sass/_section.scss */
 .section .col2 h4 i {
   color: #896d9f;
   display: block;
   margin: 0 0 20px 0;
   font-size: 30px;
 }
-/* line 230, ../sass/_section.scss */
+/* line 232, ../sass/_section.scss */
 .section .col2 p {
   color: #333333;
   font-size: 15px;
@@ -420,12 +422,12 @@ h3 {
   font-weight: 400;
   margin: 0 0 30px 0;
 }
-/* line 240, ../sass/_section.scss */
+/* line 242, ../sass/_section.scss */
 .section .col2 p a,
 .section .col2 p a:visited {
   color: #896d9f;
 }
-/* line 247, ../sass/_section.scss */
+/* line 249, ../sass/_section.scss */
 .section .col2 table {
   width: 70%;
   background: linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
@@ -435,12 +437,12 @@ h3 {
   margin: 0 0 5px 0;
 }
 @media screen and (max-width: 880px) {
-  /* line 247, ../sass/_section.scss */
+  /* line 249, ../sass/_section.scss */
   .section .col2 table {
     width: 100%;
   }
 }
-/* line 260, ../sass/_section.scss */
+/* line 262, ../sass/_section.scss */
 .section .col2 table td {
   padding: 8px 10px 8px 10px;
   color: #666666;
@@ -450,28 +452,28 @@ h3 {
   border-bottom: 1px solid #bbbbbb;
   box-shadow: 0 1px 0 #ffffff;
 }
-/* line 271, ../sass/_section.scss */
+/* line 273, ../sass/_section.scss */
 .section .col2 table i {
   color: #999999;
   margin: 0 4px 0 0;
 }
-/* line 277, ../sass/_section.scss */
+/* line 279, ../sass/_section.scss */
 .section .col2 table tr:last-child td {
   border-bottom: none;
   box-shadow: none;
 }
-/* line 283, ../sass/_section.scss */
+/* line 285, ../sass/_section.scss */
 .section .col2 table td:last-child {
   text-align: right;
 }
-/* line 289, ../sass/_section.scss */
+/* line 291, ../sass/_section.scss */
 .section .col2 .table-caption {
   color: #666666;
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
-/* line 297, ../sass/_section.scss */
+/* line 299, ../sass/_section.scss */
 .section .col2 .more {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -486,16 +488,16 @@ h3 {
   font-size: 13px;
   border-radius: 5px;
 }
-/* line 312, ../sass/_section.scss */
+/* line 314, ../sass/_section.scss */
 .section .col2 .more:active {
   background: linear-gradient(to top, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
 }
-/* line 317, ../sass/_section.scss */
+/* line 319, ../sass/_section.scss */
 .section .col2 .more i {
   font-size: 12px;
   margin: 0 5px 0 0;
 }
-/* line 324, ../sass/_section.scss */
+/* line 326, ../sass/_section.scss */
 .section .col2 .centered {
   text-align: center;
 }
@@ -512,6 +514,6 @@ h3 {
   font-size: 13px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  padding: 60px 15px 60px 15px;
+  padding: 40px 15px 60px 15px;
   box-sizing: border-box;
 }
