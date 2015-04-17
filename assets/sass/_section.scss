@@ -201,14 +201,18 @@ h3
             margin     : 0;
             max-height : 400px;
 
-            @media screen and (max-width : 600px) {
-                max-height : none;
-            }
-
-            & .bottom
+            .bottom
             {
                 margin-top : -150px;
+            }
 
+            @media screen and (max-width : 600px) {
+                max-height : none;
+
+                .bottom
+                {
+                    margin-top : 0;
+                }
             }
         }
 

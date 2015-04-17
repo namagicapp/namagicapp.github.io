@@ -387,17 +387,21 @@ h3 {
   margin: 0;
   max-height: 400px;
 }
+/* line 204, ../sass/_section.scss */
+.section .col2.image .bottom {
+  margin-top: -150px;
+}
 @media screen and (max-width: 600px) {
   /* line 199, ../sass/_section.scss */
   .section .col2.image {
     max-height: none;
   }
+  /* line 212, ../sass/_section.scss */
+  .section .col2.image .bottom {
+    margin-top: 0;
+  }
 }
-/* line 208, ../sass/_section.scss */
-.section .col2.image .bottom {
-  margin-top: -150px;
-}
-/* line 215, ../sass/_section.scss */
+/* line 219, ../sass/_section.scss */
 .section .col2 h4 {
   color: #333333;
   font-weight: 600;
@@ -405,14 +409,14 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
   margin: 0 0 20px 0;
 }
-/* line 223, ../sass/_section.scss */
+/* line 227, ../sass/_section.scss */
 .section .col2 h4 i {
   color: #896d9f;
   display: block;
   margin: 0 0 20px 0;
   font-size: 30px;
 }
-/* line 232, ../sass/_section.scss */
+/* line 236, ../sass/_section.scss */
 .section .col2 p {
   color: #333333;
   font-size: 15px;
@@ -422,12 +426,12 @@ h3 {
   font-weight: 400;
   margin: 0 0 30px 0;
 }
-/* line 242, ../sass/_section.scss */
+/* line 246, ../sass/_section.scss */
 .section .col2 p a,
 .section .col2 p a:visited {
   color: #896d9f;
 }
-/* line 249, ../sass/_section.scss */
+/* line 253, ../sass/_section.scss */
 .section .col2 table {
   width: 70%;
   background: linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
@@ -437,12 +441,12 @@ h3 {
   margin: 0 0 5px 0;
 }
 @media screen and (max-width: 880px) {
-  /* line 249, ../sass/_section.scss */
+  /* line 253, ../sass/_section.scss */
   .section .col2 table {
     width: 100%;
   }
 }
-/* line 262, ../sass/_section.scss */
+/* line 266, ../sass/_section.scss */
 .section .col2 table td {
   padding: 8px 10px 8px 10px;
   color: #666666;
@@ -452,28 +456,28 @@ h3 {
   border-bottom: 1px solid #bbbbbb;
   box-shadow: 0 1px 0 #ffffff;
 }
-/* line 273, ../sass/_section.scss */
+/* line 277, ../sass/_section.scss */
 .section .col2 table i {
   color: #999999;
   margin: 0 4px 0 0;
 }
-/* line 279, ../sass/_section.scss */
+/* line 283, ../sass/_section.scss */
 .section .col2 table tr:last-child td {
   border-bottom: none;
   box-shadow: none;
 }
-/* line 285, ../sass/_section.scss */
+/* line 289, ../sass/_section.scss */
 .section .col2 table td:last-child {
   text-align: right;
 }
-/* line 291, ../sass/_section.scss */
+/* line 295, ../sass/_section.scss */
 .section .col2 .table-caption {
   color: #666666;
   font-size: 10px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
-/* line 299, ../sass/_section.scss */
+/* line 303, ../sass/_section.scss */
 .section .col2 .more {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -488,16 +492,16 @@ h3 {
   font-size: 13px;
   border-radius: 5px;
 }
-/* line 314, ../sass/_section.scss */
+/* line 318, ../sass/_section.scss */
 .section .col2 .more:active {
   background: linear-gradient(to top, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
 }
-/* line 319, ../sass/_section.scss */
+/* line 323, ../sass/_section.scss */
 .section .col2 .more i {
   font-size: 12px;
   margin: 0 5px 0 0;
 }
-/* line 326, ../sass/_section.scss */
+/* line 330, ../sass/_section.scss */
 .section .col2 .centered {
   text-align: center;
 }
