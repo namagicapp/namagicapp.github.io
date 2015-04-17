@@ -10,7 +10,7 @@ $special-color : #896d9f;
     margin      : 50px 0 0 -431px;
     box-sizing  : border-box;
     color       : #333333;
-    font-family : "Source Sans Pro", sans-serif;
+    font-family : "Open Sans", sans-serif;
     text-align  : justify;
     font-size   : 20px;
     line-height : 32px;
@@ -106,15 +106,15 @@ h3
 
             span
             {
-                position      : relative;
-                display       : block;
-                width         : 150px;
-                height        : 150px;
-                left          : 50%;
-                margin        : 30px 0 15px -75px;
-                background    : #e4e4e4;
-                border-radius : 50%;
-                transition    : background-color 300ms;
+                position                   : relative;
+                display                    : block;
+                width                      : 150px;
+                height                     : 150px;
+                left                       : 50%;
+                margin                     : 30px 0 15px -75px;
+                background                 : #e4e4e4;
+                border-radius              : 50%;
+                transition                 : background-color 300ms;
 
                 @media screen and (max-width : 600px) {
                     margin-top : 0;
@@ -130,7 +130,6 @@ h3
             i
             {
                 color      : #ffffff;
-
                 font-size  : 60px;
                 margin-top : 45px;
                 transition : font-size 150ms, margin-top 150ms;
@@ -208,127 +207,124 @@ h3
             {
                 margin-top : -150px;
 
-                @media screen and (max-width : 600px) {
-                    margin : 0;
-                }
             }
         }
-    }
 
-    h4
-    {
-        color       : #333333;
-        font-weight : 600;
-        font-size   : 23px;
-        font-family : "Open Sans Condensed", sans-serif;
-        margin      : 0 0 15px 0;
-
-        i
+        h4
         {
-            color     : $special-color;
-            display   : block;
-            margin    : 0 0 15px 0;
-            font-size : 28px;
-        }
-    }
+            color       : #333333;
+            font-weight : 600;
+            font-size   : 26px;
+            font-family : "Open Sans Condensed", sans-serif;
+            margin      : 0 0 20px 0;
 
-    p
-    {
-        color       : #333333;
-        font-size   : 15px;
-        line-height : 25px;
-        font-family : "Source Sans Pro", sans-serif;
-        text-align  : justify;
-        font-weight : 400;
-        margin      : 0 0 20px 0;
-
-        a,
-        a:visited
-        {
-            color : $special-color;
-        }
-    }
-
-    table
-    {
-        width         : 70%;
-        background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
-        border-radius : 5px;
-        border        : 1px solid #bbbbbb;
-        box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
-        margin        : 0 0 5px 0;
-
-        @media screen and (max-width : 880px) {
-            width : 100%;
+            i
+            {
+                color     : #896d9f;
+                display   : block;
+                margin    : 0 0 20px 0;
+                font-size : 30px;
+            }
         }
 
-        td
+        p
         {
-            padding       : 8px 10px 8px 10px;
-            color         : #666666;
-            font-size     : 12px;
-            font-family   : "Source Sans Pro", sans-serif;
+            color       : #333333;
+            font-size   : 15px;
+            line-height : 25px;
+            font-family : "Open Sans", sans-serif;
+            text-align  : justify;
+            font-weight : 400;
+            margin      : 0 0 30px 0;
+
+            a,
+            a:visited
+            {
+                color : $special-color;
+            }
+        }
+
+        table
+        {
+            width         : 70%;
+            background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
+            border-radius : 5px;
+            border        : 1px solid #bbbbbb;
+            box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
+            margin        : 0 0 5px 0;
+
+            @media screen and (max-width : 880px) {
+                width : 100%;
+            }
+
+            td
+            {
+                padding       : 8px 10px 8px 10px;
+                color         : #666666;
+                font-size     : 12px;
+                font-family   : "Open Sans", sans-serif;
+                font-weight   : 400;
+                border-bottom : 1px solid #bbbbbb;
+                box-shadow    : 0 1px 0 #ffffff;
+            }
+
+            i
+            {
+                color  : #999999;
+                margin : 0 4px 0 0;
+            }
+
+            tr:last-child td
+            {
+                border-bottom : none;
+                box-shadow    : none;
+            }
+
+            td:last-child
+            {
+                text-align : right;
+            }
+        }
+
+        .table-caption
+        {
+            color       : #666666;
+            font-size   : 10px;
+            font-family : "Open Sans", sans-serif;
+            font-weight : 400;
+        }
+
+        .more
+        {
+            font-family   : "Open Sans", sans-serif;
             font-weight   : 400;
-            border-bottom : 1px solid #bbbbbb;
-            box-shadow    : 0 1px 0 #ffffff;
+            color         : #333333;
+            display       : inline-block;
+            background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
+            border        : 1px solid #bbbbbb;
+            text-align    : center;
+            box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
+            padding       : 8px 10px 8px 10px;
+            transition    : background-color 300ms;
+            font-size     : 13px;
+            border-radius : 5px;
+
+            &:active
+            {
+                background : linear-gradient(to top, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
+            }
+
+            & i
+            {
+                font-size : 12px;
+                margin    : 0 5px 0 0;
+            }
         }
 
-        i
+        .centered
         {
-            color  : #999999;
-            margin : 0 4px 0 0;
+            text-align : center;
         }
 
-        tr:last-child td
-        {
-            border-bottom : none;
-            box-shadow    : none;
-        }
-
-        td:last-child
-        {
-            text-align : right;
-        }
     }
-
-    .table-caption
-    {
-        color       : #666666;
-        font-size   : 10px;
-        font-family : "Source Sans Pro", sans-serif;
-        font-weight : 400;
-    }
-
-    .more
-    {
-        font-family   : "Source Sans Pro", sans-serif;
-        font-weight   : 400;
-        color         : #333333;
-        display       : inline-block;
-        background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
-        border        : 1px solid #bbbbbb;
-        text-align    : center;
-        box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
-        padding       : 8px 10px 8px 10px;
-        transition    : background-color 300ms;
-        font-size     : 13px;
-        border-radius : 5px;
-
-        &:active
-        {
-            background : linear-gradient(to top, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
-        }
-
-        & i
-        {
-            font-size : 12px;
-            margin    : 0 5px 0 0;
-        }
-    }
-
-    .centered
-    {
-        text-align : center;
-    }
-
 }
