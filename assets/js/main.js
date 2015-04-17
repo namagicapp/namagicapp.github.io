@@ -7,6 +7,8 @@
     var $menu;
     var $window;
     var $body;
+    var $video;
+    var $header;
     var menuTop = 0;
 
     /**
@@ -15,10 +17,13 @@
     module.init = function()
     {
         $menu = $('.js-menu');
+        $header = $('.js-header');
+        $video = $('.js-video');
         menuTop = $menu.offset().top;
         $window = $(window);
         $body = $('body');
-        $window.on('scroll', _onWindowScroll).trigger('scroll');
+        $window.on('scroll', _fixMenuOnScroll).trigger('scroll');
+        $window.on('resize', _fitVideoOnResize).trigger('resize');
         $('.js-caption-magnifier').on('mouseover mouseout', _onCaptionMagnifier);
         $('.js-scrollable').on('click', _onSmoothScroll);
     };
@@ -47,9 +52,39 @@
     };
 
     /**
+     * Makes the video fit the viewport on window resize
+     */
+    var _fitVideoOnResize = function()
+    {
+        var video_ratio = 16 / 9;
+        var header_width = $header.outerWidth();
+        var header_height = $header.outerHeight();
+        if (header_width / header_height > video_ratio)
+        {
+            var video_height = header_width / video_ratio;
+            $video.css({
+                width: header_width + 'px',
+                height: video_height + 'px',
+                top: ((header_height - video_height) / 2) + 'px',
+                left: 0
+            });
+        }
+        else
+        {
+            var video_width = header_height * video_ratio;
+            $video.css({
+                width: video_width + 'px',
+                height: header_height + 'px',
+                top: 0,
+                left: ((header_width - video_width) / 2) + 'px'
+            });
+        }
+    };
+
+    /**
      * Updates menu state on scroll
      */
-    var _onWindowScroll = function()
+    var _fixMenuOnScroll = function()
     {
         var window_top = $window.scrollTop();
         var is_fixed = $body.hasClass('js-fixed-menu');
