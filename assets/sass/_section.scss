@@ -7,7 +7,7 @@ $special-color : #896d9f;
     clear       : both;
     width       : 862px;
     left        : 50%;
-    margin      : 35px 0 0 -431px;
+    margin      : 50px 0 0 -431px;
     box-sizing  : border-box;
     color       : #333333;
     font-family : "Source Sans Pro", sans-serif;
@@ -164,7 +164,12 @@ h3
 
         &.text
         {
-            padding : 45px 30px 45px 30px;
+            padding : 80px 30px 80px 30px;
+
+            &.short
+            {
+                padding : 30px;
+            }
 
             @media screen and (max-width : 600px) {
                 width   : 100%;
@@ -201,7 +206,7 @@ h3
 
             & .bottom
             {
-                margin-top : -188px;
+                margin-top : -150px;
 
                 @media screen and (max-width : 600px) {
                     margin : 0;
@@ -235,12 +240,63 @@ h3
         font-family : "Source Sans Pro", sans-serif;
         text-align  : justify;
         font-weight : 400;
+        margin      : 0 0 20px 0;
 
         a,
         a:visited
         {
             color : $special-color;
         }
+    }
+
+    table
+    {
+        width         : 70%;
+        background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
+        border-radius : 5px;
+        border        : 1px solid #bbbbbb;
+        box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
+        margin        : 0 0 5px 0;
+
+        @media screen and (max-width : 880px) {
+            width : 100%;
+        }
+
+        td
+        {
+            padding       : 8px 10px 8px 10px;
+            color         : #666666;
+            font-size     : 12px;
+            font-family   : "Source Sans Pro", sans-serif;
+            font-weight   : 400;
+            border-bottom : 1px solid #bbbbbb;
+            box-shadow    : 0 1px 0 #ffffff;
+        }
+
+        i
+        {
+            color  : #999999;
+            margin : 0 4px 0 0;
+        }
+
+        tr:last-child td
+        {
+            border-bottom : none;
+            box-shadow    : none;
+        }
+
+        td:last-child
+        {
+            text-align : right;
+        }
+    }
+
+    .table-caption
+    {
+        color       : #666666;
+        font-size   : 10px;
+        font-family : "Source Sans Pro", sans-serif;
+        font-weight : 400;
     }
 
     .more
@@ -252,7 +308,6 @@ h3
         background    : linear-gradient(to bottom, rgba(239, 244, 246, 0.5), rgba(216, 216, 216, 0.5));
         border        : 1px solid #bbbbbb;
         text-align    : center;
-        margin        : 20px 0 0 0;
         box-shadow    : inset 0 1px 0 #ffffff, 0 1px 0 #ffffff;
         padding       : 8px 10px 8px 10px;
         transition    : background-color 300ms;
