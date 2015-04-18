@@ -20,3 +20,9 @@ a:visited
     text-decoration : none;
     outline         : 0;
 }
+
+::selection
+{
+    background: #b893d6;
+    color: #ffffff;
+}
