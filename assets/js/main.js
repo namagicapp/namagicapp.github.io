@@ -22,10 +22,28 @@
         menuTop = $menu.offset().top;
         $window = $(window);
         $body = $('body');
-        $window.on('scroll', _fixMenuOnScroll).trigger('scroll');
-        $window.on('resize', _fitVideoOnResize).trigger('resize');
+        _initEvents();
+        _initUI();
+    };
+
+    /**
+     * Inits events
+     */
+    var _initEvents = function()
+    {
+        $window.on('scroll', _fixMenuOnScroll);
+        $window.on('resize', _fitVideoOnResize);
         $('.js-caption-magnifier').on('mouseover mouseout', _onCaptionMagnifier);
         $('.js-scrollable').on('click', _onSmoothScroll);
+    };
+
+    /**
+     * Inits UI
+     */
+    var _initUI = function()
+    {
+        $window.trigger('scroll');
+        $window.trigger('resize');
     };
 
     /**

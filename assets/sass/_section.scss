@@ -1,53 +1,12 @@
 $special-color : #896d9f;
 
-.emphasis
-{
-    position    : relative;
-    float       : left;
-    clear       : both;
-    width       : 862px;
-    left        : 50%;
-    margin      : 50px 0 0 -431px;
-    box-sizing  : border-box;
-    color       : #333333;
-    font-family : "Open Sans", sans-serif;
-    text-align  : justify;
-    font-size   : 20px;
-    line-height : 32px;
-
-    @media screen and (max-width : 880px) {
-        width  : 80%;
-        margin : 35px 0 0 10%;
-        left   : 0;
-    }
-
-    &:before
-    {
-        font-size   : 24px;
-        color       : #cccccc;
-        font-family : "FontAwesome", sans-serif;
-        content     : '\f10d';
-        display     : block;
-    }
-
-    &:after
-    {
-        font-size   : 24px;
-        color       : #cccccc;
-        font-family : "FontAwesome", sans-serif;
-        content     : '\f10e';
-        display     : block;
-        text-align  : right;
-    }
-}
-
 h3
 {
     position    : relative;
     float       : left;
     clear       : both;
     width       : 100%;
-    margin      : 35px 0 35px 0;
+    margin      : 60px 0 35px 0;
     color       : $special-color;
     text-align  : center;
     font-weight : 600;
@@ -61,7 +20,41 @@ h3
     width      : 100%;
     float      : left;
     background : linear-gradient(to bottom, #fafafa, #f3f3f3);
-    overflow : hidden;
+    overflow   : hidden;
+
+    .emphasis
+    {
+        position    : relative;
+        color       : #333333;
+        font-family : "Open Sans", sans-serif;
+        text-align  : justify;
+        font-size   : 20px;
+        line-height : 32px;
+        margin      : 80px 20px 80px 20px;
+
+        @media screen and (max-width : 880px) {
+            margin-top : 50px;
+        }
+
+        &:before
+        {
+            font-size   : 24px;
+            color       : #cccccc;
+            font-family : "FontAwesome", sans-serif;
+            content     : '\f10d';
+            display     : block;
+        }
+
+        &:after
+        {
+            font-size   : 24px;
+            color       : #cccccc;
+            font-family : "FontAwesome", sans-serif;
+            content     : '\f10e';
+            display     : block;
+            text-align  : right;
+        }
+    }
 
     .inside
     {
@@ -233,7 +226,7 @@ h3
 
             i
             {
-                color     : #896d9f;
+                color     : $special-color;
                 display   : block;
                 margin    : 0 0 20px 0;
                 font-size : 30px;
