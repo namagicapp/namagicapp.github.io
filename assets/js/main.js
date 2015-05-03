@@ -35,6 +35,21 @@
         $window.on('resize', _fitVideoOnResize);
         $('.js-caption-magnifier').on('mouseover mouseout', _onCaptionMagnifier);
         $('.js-scrollable').on('click', _onSmoothScroll);
+        $('.js-track').on('click', _onTrackEvent);
+    };
+
+    /**
+     * Tracks an event
+     * @param evt
+     * @private
+     */
+    var _onTrackEvent = function(evt)
+    {
+        var target = $(evt.currentTarget).data('track');
+        if (typeof ga !== 'undefined')
+        {
+            ga('send', 'event', {eventCategory: 'Interactions', eventAction: 'Click', eventLabel: target});
+        }
     };
 
     /**
