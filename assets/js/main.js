@@ -9,7 +9,7 @@
     var $body;
     var $video;
     var $header;
-    var menuTop = 0;
+    var $headerContent;
 
     /**
      * Inits main module
@@ -18,8 +18,8 @@
     {
         $menu = $('.js-menu');
         $header = $('.js-header');
+        $headerContent = $('.js-header-content');
         $video = $('.js-video');
-        menuTop = $menu.offset().top;
         $window = $(window);
         $body = $('body');
         _initEvents();
@@ -32,8 +32,7 @@
     var _initEvents = function()
     {
         $window.on('scroll', _fixMenuOnScroll);
-        $window.on('resize', _fitVideoOnResize);
-        $('.js-caption-magnifier').on('mouseover mouseout', _onCaptionMagnifier);
+        $window.on('resize', _fitHeaderOnResize);
         $('.js-scrollable').on('click', _onSmoothScroll);
         $('.js-track').on('click', _onTrackEvent);
     };
@@ -62,18 +61,6 @@
     };
 
     /**
-     * Rollover on a magnifier (linked to a caption)
-     * @param evt
-     */
-    var _onCaptionMagnifier = function(evt)
-    {
-        var $magnifier = $(evt.currentTarget);
-        var $overlay = $('#' + $magnifier.data('caption')).find('.js-overlay-' + $magnifier.data('overlay'));
-        var callable = evt.type === 'mouseover' ? $overlay.fadeIn : $overlay.fadeOut;
-        callable.apply($overlay, [150]);
-    };
-
-    /**
      * Scrolls smoothly to the required element
      * @param evt
      */
@@ -85,13 +72,17 @@
     };
 
     /**
-     * Makes the video fit the viewport on window resize
+     * Makes the video fit the viewport on window resize & adjusts header height
      */
-    var _fitVideoOnResize = function()
+    var _fitHeaderOnResize = function()
     {
+        var header_height = Math.max($headerContent.outerHeight() + 200, $window.height());
+        $header.css('height', header_height + 'px');
+        $headerContent.css('top', ((header_height - $headerContent.height()) / 2) + 'px');
+
+
         var video_ratio = 16 / 9;
         var header_width = $header.outerWidth();
-        var header_height = $header.outerHeight();
         if (header_width / header_height > video_ratio)
         {
             var video_height = header_width / video_ratio;
@@ -119,13 +110,14 @@
      */
     var _fixMenuOnScroll = function()
     {
+        var menu_top = $header.height();
         var window_top = $window.scrollTop();
         var is_fixed = $body.hasClass('js-fixed-menu');
-        if (is_fixed && window_top <= menuTop)
+        if (is_fixed && window_top <= menu_top)
         {
             $body.removeClass('js-fixed-menu');
         }
-        if (!is_fixed && window_top > menuTop)
+        if (!is_fixed && window_top > menu_top)
         {
             $body.addClass('js-fixed-menu');
         }
