@@ -5,6 +5,7 @@
 
     var module = {};
     var $menu;
+    var $menuPlaceholder;
     var $window;
     var $body;
     var $video;
@@ -17,13 +18,17 @@
     module.init = function()
     {
         $menu = $('.js-menu');
+        $menuPlaceholder = $('.js-menu-placeholder');
         $header = $('.js-header');
         $headerContent = $('.js-header-content');
         $video = $('.js-video');
         $window = $(window);
         $body = $('body');
         _initEvents();
-        _initUI();
+        window.onload = function()
+        {
+            _initUI();
+        };
     };
 
     /**
@@ -35,6 +40,15 @@
         $window.on('resize', _fitHeaderOnResize);
         $('.js-scrollable').on('click', _onSmoothScroll);
         $('.js-track').on('click', _onTrackEvent);
+    };
+
+    /**
+     * Inits UI
+     */
+    var _initUI = function()
+    {
+        $window.trigger('resize');
+        $window.trigger('scroll');
     };
 
     /**
@@ -52,22 +66,13 @@
     };
 
     /**
-     * Inits UI
-     */
-    var _initUI = function()
-    {
-        $window.trigger('scroll');
-        $window.trigger('resize');
-    };
-
-    /**
      * Scrolls smoothly to the required element
      * @param evt
      */
     var _onSmoothScroll = function(evt)
     {
         evt.preventDefault();
-        var top = $($(evt.currentTarget).attr('href')).offset().top - ($menu.height() * 2);
+        var top = $($(evt.currentTarget).attr('href')).offset().top - $menu.outerHeight();
         $('html, body').animate({scrollTop: top}, 300);
     };
 
@@ -79,8 +84,7 @@
         var header_height = Math.max($headerContent.outerHeight() + 200, $window.height());
         $header.css('height', header_height + 'px');
         $headerContent.css('top', ((header_height - $headerContent.height()) / 2) + 'px');
-
-
+        $menuPlaceholder.css({height: $menu.outerHeight()});
         var video_ratio = 16 / 9;
         var header_width = $header.outerWidth();
         if (header_width / header_height > video_ratio)
@@ -110,17 +114,9 @@
      */
     var _fixMenuOnScroll = function()
     {
-        var menu_top = $header.height();
-        var window_top = $window.scrollTop();
-        var is_fixed = $body.hasClass('js-fixed-menu');
-        if (is_fixed && window_top <= menu_top)
-        {
-            $body.removeClass('js-fixed-menu');
-        }
-        if (!is_fixed && window_top > menu_top)
-        {
-            $body.addClass('js-fixed-menu');
-        }
+        var header_height = $header.height();
+        var is_fixed = $window.scrollTop() > header_height;
+        $menu.css({top: is_fixed ? 0 : header_height, position: is_fixed ? 'fixed' : 'absolute'});
     };
 
     window.Main = module;
