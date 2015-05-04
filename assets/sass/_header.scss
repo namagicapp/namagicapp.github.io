@@ -36,21 +36,21 @@
         background-size : cover;
     }
 
-    h2
+    h1
     {
         position    : relative;
         z-index     : 4;
-        font-weight : 400;
-        font-size   : 44px;
-        line-height : 56px;
+        font-weight : 300;
+        font-size   : 46px;
+        line-height : 70px;
         text-align  : center;
         text-shadow : 0 1px 0 rgba(0, 0, 0, 0.5);
         font-family : "Open Sans", sans-serif;
-        margin      : 0 30px 80px 30px;
+        margin      : 0 300px 80px 300px;
 
         strong
         {
-            font-weight : 600;
+            font-weight : 400;
         }
     }
 
@@ -63,7 +63,7 @@
         display       : block;
         width         : 210px;
         height        : 60px;
-        background    : #000000 url(images/mas.png) no-repeat;
+        background    : #ffffff url(images/mas-white.png) no-repeat;
         overflow      : hidden;
         text-indent   : -500px;
         border-radius : 6px;

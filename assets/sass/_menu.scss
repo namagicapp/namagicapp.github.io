@@ -23,34 +23,7 @@
         padding : 0 0 8px 0;
     }
 
-    h1
-    {
-        position    : absolute;
-        font-size   : inherit;
-        color       : #ffffff;
-        margin      : 18px 0 0 65px;
-        line-height : 22px;
 
-        & a
-        {
-            font-size     : 11px;
-            float         : right;
-            margin        : 7px 0 0 10px;
-            color         : #000000;
-            background    : #222222;
-            display       : inline-block;
-            line-height   : 8px;
-            padding       : 4px 5px 4px 3px;
-            border-radius : 2px;
-            font-family   : "Open Sans", sans-serif;
-            transition    : background-color 150ms;
-
-            &:hover
-            {
-                background : #ffffff;
-            }
-        }
-    }
 
     .links
     {
