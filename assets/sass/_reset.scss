@@ -14,11 +14,6 @@ html
     background : #fafafa;
 }
 
-body
-{
-    float : left;
-}
-
 a,
 a:visited
 {
@@ -35,6 +30,7 @@ a:visited
 body.js-loading
 {
     overflow : hidden;
+    float    : left;
 
     &:after
     {

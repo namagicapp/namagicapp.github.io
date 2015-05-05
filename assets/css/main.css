@@ -14,28 +14,24 @@ html {
 }
 
 /* line 17, ../sass/_reset.scss */
-body {
-  float: left;
-}
-
-/* line 22, ../sass/_reset.scss */
 a,
 a:visited {
   text-decoration: none;
   outline: 0;
 }
 
-/* line 29, ../sass/_reset.scss */
+/* line 24, ../sass/_reset.scss */
 ::selection {
   background: #b893d6;
   color: #ffffff;
 }
 
-/* line 35, ../sass/_reset.scss */
+/* line 30, ../sass/_reset.scss */
 body.js-loading {
   overflow: hidden;
+  float: left;
 }
-/* line 39, ../sass/_reset.scss */
+/* line 35, ../sass/_reset.scss */
 body.js-loading:after {
   color: #cccccc;
   position: absolute;
@@ -88,8 +84,8 @@ body.js-loading:after {
   position: relative;
   z-index: 4;
   font-weight: 300;
-  font-size: 54px;
-  line-height: 78px;
+  font-size: 46px;
+  line-height: 76px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   font-family: "Open Sans", sans-serif;
@@ -158,7 +154,7 @@ body.js-loading:after {
     bottom: 25px;
   }
 }
-@-moz-keyframes bounce /* Firefox */ {
+@-moz-keyframes bounce {
   0% {
     bottom: 25px;
   }
@@ -169,7 +165,7 @@ body.js-loading:after {
     bottom: 25px;
   }
 }
-@-webkit-keyframes bounce /* Safari and Chrome */ {
+@-webkit-keyframes bounce {
   0% {
     bottom: 25px;
   }
@@ -180,7 +176,7 @@ body.js-loading:after {
     bottom: 25px;
   }
 }
-@-o-keyframes bounce /* Opera */ {
+@-o-keyframes bounce {
   0% {
     bottom: 25px;
   }

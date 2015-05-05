@@ -89,6 +89,7 @@
         $header.css('height', header_height + 'px');
         $headerContent.css('top', ((header_height - $headerContent.height()) / 2) + 'px');
         $menuPlaceholder.css({height: $menu.outerHeight()});
+        _fixMenuOnScroll();
         var video_ratio = 16 / 9;
         var header_width = $header.outerWidth();
         if (header_width / header_height > video_ratio)
