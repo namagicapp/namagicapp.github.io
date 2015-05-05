@@ -4,6 +4,7 @@
     'use strict';
 
     var module = {};
+    var $wrapper;
     var $menu;
     var $menuPlaceholder;
     var $window;
@@ -17,6 +18,7 @@
      */
     module.init = function()
     {
+        $wrapper = $('.js-wrapper');
         $menu = $('.js-menu');
         $menuPlaceholder = $('.js-menu-placeholder');
         $header = $('.js-header');
@@ -49,6 +51,8 @@
     {
         $window.trigger('resize');
         $window.trigger('scroll');
+        $wrapper.animate({opacity: 1}, 500);
+        $body.removeClass('js-loading');
     };
 
     /**

@@ -14,16 +14,39 @@ html {
 }
 
 /* line 17, ../sass/_reset.scss */
+body {
+  float: left;
+}
+
+/* line 22, ../sass/_reset.scss */
 a,
 a:visited {
   text-decoration: none;
   outline: 0;
 }
 
-/* line 24, ../sass/_reset.scss */
+/* line 29, ../sass/_reset.scss */
 ::selection {
   background: #b893d6;
   color: #ffffff;
+}
+
+/* line 35, ../sass/_reset.scss */
+body.js-loading {
+  overflow: hidden;
+}
+/* line 39, ../sass/_reset.scss */
+body.js-loading:after {
+  color: #cccccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '\f013';
+  display: block;
+  font-size: 40px;
+  font-family: "FontAwesome", serif;
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 
 /* line 1, ../sass/_header.scss */
