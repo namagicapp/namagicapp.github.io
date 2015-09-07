@@ -81,17 +81,13 @@ h3
         }
     }
 
-    .col4
+    .col3
     {
         float      : left;
-        width      : 25%;
+        width      : 33.33%;
         box-sizing : border-box;
         text-align : center;
         padding    : 0 10px 0 10px;
-
-        @media screen and (max-width : 800px) {
-            width : 50%;
-        }
 
         @media screen and (max-width : 600px) {
             width : 100%;
