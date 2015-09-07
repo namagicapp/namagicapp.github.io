@@ -6,9 +6,9 @@ Visit [project page](http://www.namagicapp.com) for more information.
 
 ## License
 
-This project is releases under the [MIT License](LICENSE).
+This project is released under the [MIT License](LICENSE).
 
 ## Credits
 
-[Font Awesome](http://fontawesome.io)
-[jQuery](https://jquery.com/)
+* [Font Awesome](http://fontawesome.io)
+* [jQuery](https://jquery.com/)
