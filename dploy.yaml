@@ -1,0 +1,11 @@
+ocean:
+    scheme: "sftp"
+    host: "namagicapp.com"
+    user: "johan"
+    check: false
+    path:
+        remote: "/var/www/namagicapp.com"
+    privateKey: "~/.ssh/digital_ocean_johan"
+    publicKey: "~/.ssh/digital_ocean_johan.pub"
+    branch: "master"
+    exclude: ["dploy.yaml", "readme.md", "license", ".gitignore"]
