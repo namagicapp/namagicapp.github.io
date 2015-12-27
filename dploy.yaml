@@ -8,4 +8,4 @@ ocean:
     privateKey: "~/.ssh/digital_ocean_johan"
     publicKey: "~/.ssh/digital_ocean_johan.pub"
     branch: "master"
-    exclude: ["dploy.yaml", "readme.md", "license", ".gitignore", "assets/sass", "assets/config.rb"]
+    exclude: ["dploy.yaml", "readme.md", "license", ".gitignore", "assets/sass/**/*", "assets/config.rb"]
