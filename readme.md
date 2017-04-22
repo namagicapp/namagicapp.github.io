@@ -2,11 +2,11 @@
 
 Namagic official website.
 
-Visit [project page](http://www.namagicapp.com) for more information.
+Visit [project page](https://www.namagicapp.com) for more information.
 
 ## License
 
-This project is released under the [MIT License](LICENSE).
+This project is released under the [MIT License](license.md).
 
 ## Credits
 

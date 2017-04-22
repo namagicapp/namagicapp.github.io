@@ -1,0 +1,14 @@
+{
+  "name": "namagicapp.com",
+  "private": true,
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "fs-extra": "^2.1.2",
+    "html-minifier": "^3.4.3",
+    "node-sass": "^4.5.2"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "npm run build && rsync --archive --checksum --verbose --chmod=u=rwX,g=rX --exclude=.DS_Store dist/ $(head -n 1 .cdn)"
+  }
+}
