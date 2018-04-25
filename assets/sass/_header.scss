@@ -65,11 +65,33 @@
         position      : relative;
         z-index       : 4;
         left          : 50%;
-        margin        : 0 0 70px -105px;
+        margin        : 0 0 20px -105px;
         display       : block;
         width         : 210px;
         height        : 60px;
         background    : #ffffff url(images/mas-2x.png) no-repeat 0 0 / 210px 60px;
+        overflow      : hidden;
+        text-indent   : -500px;
+        border-radius : 6px;
+        box-shadow    : 0 0 12px rgba(0, 0, 0, 0.7);
+        transition    : box-shadow 300ms;
+
+        &:hover
+        {
+            box-shadow : 0 0 18px #ffffff;
+        }
+    }
+
+    .github
+    {
+        position      : relative;
+        z-index       : 4;
+        left          : 50%;
+        margin        : 0 0 70px -105px;
+        display       : block;
+        width         : 210px;
+        height        : 60px;
+        background    : #ffffff url(images/github-2x.png) no-repeat 0 0 / 210px 60px;
         overflow      : hidden;
         text-indent   : -500px;
         border-radius : 6px;
