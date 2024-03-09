@@ -1,7 +1,6 @@
 const ejs    = require('ejs')
 const fs     = require('fs-extra')
 const minify = require('html-minifier').minify
-const sass   = require('node-sass')
 
 prepareDist().then(() => {
   Promise.all([copyAssets(), buildCSS(), buildJS()])
@@ -25,14 +24,7 @@ function copyAssets() {
 
 function buildCSS() {
   console.log('Building CSS')
-  return new Promise((resolve, reject) => {
-    const css = sass.render({
-      file: 'assets/sass/main.scss',
-      outputStyle: 'compressed',
-    }, (error, result) => {
-      error ? reject(error) : resolve(result.css.toString())
-    })
-  })
+  return fs.readFileSync('assets/main.css', 'utf8')
 }
 
 function buildJS() {

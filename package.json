@@ -4,8 +4,7 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "fs-extra": "^5.0.0",
-    "html-minifier": "^3.5.11",
-    "node-sass": "^4.7.2"
+    "html-minifier": "^3.5.11"
   },
   "scripts": {
     "build": "node build.js"
