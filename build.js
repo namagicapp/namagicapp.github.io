@@ -18,6 +18,7 @@ function copyAssets() {
   return new Promise((resolve, reject) => {
     fs.copySync('assets/images', 'dist/images')
     fs.copySync('assets/video', 'dist/video')
+    fs.copySync('_headers', 'dist/_headers')
     resolve()
   })
 }
